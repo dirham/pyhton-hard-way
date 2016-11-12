@@ -1,23 +1,20 @@
-# modify excercise ex16.py with raw_input
-
-# import package
+# copying file with raw_input based on ex16
 
 from os.path import exists
 
-print "oke let's enter the file you want to open"
-file_to_open = raw_input("enter the file name : ") # oke.xt or what you want 
+print "Test copying file, input name of file you want to copy below : "
+copy_this = raw_input("")
 
-read_file = open(file_to_open)
-cp_read = read_file.read()
+# open and read the file input
+read_copy = open(copy_this)
+# must use var to assign read file
+this_one = read_copy.read()
 
-cp_name = raw_input("Oke now enter the name you want for duplicate name : ")
-print "check file name exists or not ? %r" % exists(cp_name)
+print "Now we ready to copy the file %r" % copy_this
 
-cp_this = open(cp_name,'w')
-cp_this.write(cp_read)
+to_file = raw_input("Enter the file name for new file : ")
+print "file %r is exists ? %r" %(to_file, exists(to_file))
+create_file = open(to_file,'w')
+create_file.write(this_one)
 
-print "Finising up"
-
-cp_this.close()
-read_file.close()
-print "All done sir"
+print "Oke sir, all done !"
