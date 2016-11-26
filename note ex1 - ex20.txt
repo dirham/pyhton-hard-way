@@ -1,0 +1,19 @@
+all i learn :
+argv : is using to pass argument when run script Ex : python ex19.py second
+
+*args : is use to pass many argument in Functions
+
+%s (format printing as string) %d (format printing as decimial, integer) %f (float) %r (to see what is type of var)
+
+round() is a Functions to controll float number
+
+open('file_name') is use to open file if we using open('file_name', w) the second parameter tell python
+we want to copy exiting file or create new file to write later
+
+filename.read() filename is a variable that take value from open() method file and than read() used to view what inside that file
+
+filename.write("write somethig new to file") is use for write on the current open file
+
+filename.close() is use to close current open file
+
+def is use to declareate new Functions
