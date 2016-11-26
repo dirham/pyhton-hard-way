@@ -5,7 +5,7 @@ argv : is using to pass argument when run script Ex : python ex19.py second
 
 %s (format printing as string) %d (format printing as decimial, integer) %f (float) %r (to see what is type of var)
 
-round() is a Functions to controll float number
+round() is a Functions to controll float number ex round(3.0000, 2) # output = 3.00
 
 open('file_name') is use to open file if we using open('file_name', w) the second parameter tell python
 we want to copy exiting file or create new file to write later
